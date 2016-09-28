@@ -1,1 +1,2 @@
 # DataTypesAndVariablesClass
+Exercise in Class
