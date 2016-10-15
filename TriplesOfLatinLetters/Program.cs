@@ -11,13 +11,18 @@ namespace TriplesOfLatinLetters
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            for (char i = 'a'; i <='z'; i++)
+            for (int i =0; i <=n; i++)
             {
-                
-                        
-                        Console.WriteLine(i);
-                    
-                
+                for (int z = 0; z < n; z++)
+                {
+                    for (int y = 0; y < n; y++)
+                    {
+                        char letter1 = (char)('a' + i);
+                        char letter2 = (char)('a' + z);
+                        char letter3 = (char)('a' + y);
+                        Console.WriteLine("{0}{1}{2}", letter1,letter2,letter3);
+                    }
+                }  
             }
         }
     }
